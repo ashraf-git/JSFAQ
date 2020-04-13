@@ -4,7 +4,13 @@ function addNumbers(num1, num2){
         const num = arguments[i];
         sum = sum + num;
     }
-    return sum;
+    logInfo('Good Morning');
+    function logInfo(message){
+        console.log(message);
+    }
+    var double = sum * 2;
+
+    return double;
 }
 var result = addNumbers(3, 5, 4, 6);
-console.log(arguments);
+console.log(result);
