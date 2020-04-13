@@ -18,10 +18,11 @@
     </div>
     <script>
         document.getElementById('first').addEventListener('click', function(event){
-            console.log('first item click')
+            console.log('first item click');
         })
         document.getElementById('myList').addEventListener('click', function(event){
-            console.log('UL Clicked')
+            console.log('UL Clicked');
+            event.stopPropagation();
         })
         document.getElementById('container').addEventListener('click', function(event){
             console.log('container Clicked')
